@@ -1,16 +1,17 @@
-/* --- New Color Palette: Simple & Attractive --- */
-/* Background:   #ffffff (White) */
-/* Text/Headings:#333333 (Charcoal) */
-/* Accent:       #20c997 (Mint Green) */
-/* Dark Hero BG: Dark Gradient */
+/* --- New Color Palette: Warm & Professional --- */
+/* Dark Slate:   #1a202c */
+/* Accent:       #dd6b20 (Burnt Orange) */
+/* Accent Hover: #c05621 (Darker Orange) */
+/* Background:   #edf2f7 (Off-white) */
+/* Text:         #1a202c */
 /* --- --- --- --- --- --- --- --- --- --- --- */
 
 /* --- General Styles --- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #ffffff; /* Clean white background */
-    color: #333333; /* High-contrast charcoal text */
+    background-color: #edf2f7; /* Soft off-white background */
+    color: #1a202c; /* Dark slate text for high contrast */
 }
 
 .container {
@@ -20,21 +21,21 @@ body {
 }
 
 h2 {
-    color: #333333; /* Standard heading color */
-    border-bottom: 2px solid #20c997; /* Mint green accent border */
+    color: #1a202c;
+    border-bottom: 2px solid #dd6b20; /* Burnt orange accent border */
     padding-bottom: 10px;
 }
 
 /* --- Navigation Bar --- */
 nav {
-    background-color: #ffffff; /* White navigation bar */
+    background-color: #ffffff; /* Clean white navigation bar */
     padding: 10px 0;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 100;
-    border-bottom: 1px solid #eeeeee; /* Subtle separator */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Soft shadow for depth */
+    border-bottom: 1px solid #cbd5e0; /* Subtle separator */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 nav ul {
@@ -49,7 +50,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333333; /* Dark text for readability */
+    color: #1a202c; /* Dark slate text */
     text-decoration: none;
     padding: 15px 20px;
     font-weight: bold;
@@ -57,21 +58,16 @@ nav ul li a {
     border-radius: 5px;
 }
 
-nav ul li a:hover {
-    background-color: #20c997; /* Mint green highlight on hover */
-    color: #ffffff; /* White text on highlight */
-}
-
+nav ul li a:hover,
 nav ul li a.active {
-    background-color: #20c997;
+    background-color: #dd6b20; /* Burnt orange highlight */
     color: #ffffff;
 }
 
 /* --- Hero Section (Homepage) --- */
 .hero {
-    /* UPDATED: Dark gradient background */
-    background: linear-gradient(135deg, #2d3436 0%, #000000 100%);
-    color: #ffffff; /* UPDATED: White text for contrast */
+    background-color: #1a202c; /* Dark slate background */
+    color: #ffffff;
     text-align: center;
     padding: 80px 20px;
 }
@@ -84,6 +80,7 @@ nav ul li a.active {
 .hero h2 {
     font-size: 1.5em;
     font-weight: 300;
+    color: #a0aec0; /* Lighter grey for subtitle */
 }
 
 .hero p {
@@ -96,7 +93,7 @@ nav ul li a.active {
     display: inline-block;
     padding: 12px 25px;
     margin: 10px;
-    background-color: #20c997; /* Mint green button */
+    background-color: #dd6b20; /* Burnt orange button */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -105,22 +102,22 @@ nav ul li a.active {
 }
 
 .button:hover {
-    background-color: #1baa80; /* Darker mint on hover */
+    background-color: #c05621; /* Darker orange on hover */
 }
 
 /* --- Project and Info Cards --- */
 .card {
     background-color: #ffffff;
     border-radius: 8px;
-    border: 1px solid #e9ecef; /* Subtle border */
-    box-shadow: none; /* Removed shadow for a flatter, simpler look */
+    border: 1px solid #cbd5e0; /* Subtle border */
+    box-shadow: none;
     margin-bottom: 25px;
     padding: 25px;
 }
 
 .card h3 {
     margin-top: 0;
-    color: #20c997; /* Mint green accent for card titles */
+    color: #dd6b20; /* Burnt orange accent for card titles */
 }
 
 .card ul {
