@@ -114,3 +114,17 @@ nav ul li a:hover, .active {
     margin-bottom: 10px;
     line-height: 1.5;
 }
+
+/* --- Mobile Styles --- */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .hero h2 {
+        font-size: 1.2em;
+    }
+    nav ul li {
+        display: block; /* Stack navigation links vertically */
+        margin: 5px 0;
+    }
+}
