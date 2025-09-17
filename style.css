@@ -1,9 +1,9 @@
-/* --- New Theme: Teal & Gold --- */
-/* Deep Teal:    #004d40 */
-/* Bright Gold:  #ffc107 */
-/* Dark Text:    #212121 */
-/* Body Text:    #424242 */
-/* Background:   #f5f5f5 */
+/* --- New Theme: Classic Blue --- */
+/* Classic Blue: #0d6efd */
+/* Dark Text:    #212529 */
+/* Body Text:    #495057 */
+/* Background:   #ffffff */
+/* Light Grey BG:#f8f9fa */
 /* --- --- --- --- --- --- --- --- */
 
 /* --- Google Font Import --- */
@@ -13,10 +13,10 @@
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
-    background-color: #f5f5f5; /* Light grey background */
-    color: #424242;
-    font-size: 17px;
-    line-height: 1.7;
+    background-color: #ffffff;
+    color: #495057; /* Softer grey for body text */
+    font-size: 17px; /* Slightly larger for readability */
+    line-height: 1.7; /* Increased line spacing */
     -webkit-font-smoothing: antialiased;
 }
 
@@ -27,8 +27,8 @@ body {
 }
 
 h2 {
-    color: #212121;
-    border-bottom: 2px solid #ffc107; /* Gold accent */
+    color: #212529; /* Darker heading color */
+    border-bottom: 2px solid #0d6efd; /* Classic blue accent */
     padding-bottom: 10px;
     font-weight: 700;
 }
@@ -42,7 +42,7 @@ nav {
     width: 100%;
     z-index: 100;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #dee2e6;
 }
 
 nav ul {
@@ -58,7 +58,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #212121;
+    color: #212529;
     text-decoration: none;
     padding: 10px 18px;
     font-weight: 600;
@@ -66,28 +66,32 @@ nav ul li a {
     border-radius: 6px;
 }
 
-nav ul li a:hover,
+nav ul li a:hover {
+    color: #0d6efd;
+}
+
 nav ul li a.active {
-    color: #004d40; /* Deep Teal for active/hover link */
+    color: #0d6efd;
+    font-weight: 700;
 }
 
 /* Resume Button in Nav */
 nav ul li a.button {
-    color: #004d40;
-    border: 2px solid #004d40;
+    color: #0d6efd;
+    border: 2px solid #0d6efd;
     padding: 8px 18px;
     margin-left: 15px;
 }
 
 nav ul li a.button:hover {
-    background-color: #004d40;
+    background-color: #0d6efd;
     color: #ffffff;
 }
 
 /* --- Hero Section (Homepage) --- */
 .hero {
-    background-color: #004d40; /* Deep Teal background */
-    color: #ffffff;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #212529; /* Dark text */
     text-align: center;
     padding: 100px 20px;
 }
@@ -101,7 +105,7 @@ nav ul li a.button:hover {
 .hero h2 {
     font-size: 1.5em;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    color: #495057; /* Softer grey for subtitle */
     margin-top: 10px;
 }
 
@@ -115,42 +119,39 @@ nav ul li a.button:hover {
     display: inline-block;
     padding: 14px 28px;
     margin: 10px;
-    background-color: #ffc107; /* Gold button */
-    color: #212121; /* Dark text on gold button */
+    background-color: #0d6efd;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 6px;
-    font-weight: 700; /* Bolder text on button */
-    border: 2px solid #ffc107;
+    font-weight: 600;
+    border: 2px solid #0d6efd;
     transition: all 0.3s ease;
 }
 
 .button:hover {
-    background-color: #ffca28;
-    border-color: #ffca28;
-    transform: translateY(-2px); /* Slight lift on hover */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: #0b5ed7; /* Darker blue on hover */
+    border-color: #0b5ed7;
 }
 
 /* --- Project and Info Cards --- */
 .card {
     background-color: #ffffff;
     border-radius: 8px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border: 1px solid #dee2e6;
+    box-shadow: none;
     margin-bottom: 25px;
     padding: 30px;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: border-color 0.3s ease;
 }
 
 .card:hover {
-    border-color: #ffc107; /* Gold border on hover */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-color: #0d6efd; /* Blue border on hover */
 }
 
 .card h3 {
     margin-top: 0;
-    color: #004d40; /* Deep Teal for card titles */
-    font-weight: 700;
+    color: #212529;
+    font-weight: 600;
 }
 
 .card ul {
@@ -165,11 +166,11 @@ nav ul li a.button:hover {
 }
 
 .card li::before {
-    content: '▪';
+    content: '›';
     position: absolute;
     left: 0;
     font-weight: 700;
-    color: #ffc107; /* Gold bullet */
+    color: #0d6efd; /* Classic blue bullet */
 }
 
 /* --- Mobile Styles --- */
