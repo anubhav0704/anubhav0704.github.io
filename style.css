@@ -1,10 +1,10 @@
-/* --- New Theme: Crimson & Slate --- */
-/* Dark Slate:   #2d3748 */
-/* Crimson Red:  #e53e3e */
-/* Text:         #1a202c */
-/* Body Text:    #4a5568 */
-/* Background:   #f7fafc */
-/* --- --- --- --- --- --- --- --- --- */
+/* --- New Theme: Teal & Gold --- */
+/* Deep Teal:    #004d40 */
+/* Bright Gold:  #ffc107 */
+/* Dark Text:    #212121 */
+/* Body Text:    #424242 */
+/* Background:   #f5f5f5 */
+/* --- --- --- --- --- --- --- --- */
 
 /* --- Google Font Import --- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
@@ -13,8 +13,8 @@
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
-    background-color: #f7fafc; /* Very light grey background */
-    color: #4a5568;
+    background-color: #f5f5f5; /* Light grey background */
+    color: #424242;
     font-size: 17px;
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
@@ -27,8 +27,8 @@ body {
 }
 
 h2 {
-    color: #1a202c;
-    border-bottom: 2px solid #e53e3e; /* Crimson accent */
+    color: #212121;
+    border-bottom: 2px solid #ffc107; /* Gold accent */
     padding-bottom: 10px;
     font-weight: 700;
 }
@@ -42,7 +42,7 @@ nav {
     width: 100%;
     z-index: 100;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 nav ul {
@@ -58,7 +58,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #2d3748;
+    color: #212121;
     text-decoration: none;
     padding: 10px 18px;
     font-weight: 600;
@@ -68,25 +68,25 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #e53e3e; /* Crimson for active/hover link */
+    color: #004d40; /* Deep Teal for active/hover link */
 }
 
 /* Resume Button in Nav */
 nav ul li a.button {
-    color: #e53e3e;
-    border: 2px solid #e53e3e;
+    color: #004d40;
+    border: 2px solid #004d40;
     padding: 8px 18px;
     margin-left: 15px;
 }
 
 nav ul li a.button:hover {
-    background-color: #e53e3e;
+    background-color: #004d40;
     color: #ffffff;
 }
 
 /* --- Hero Section (Homepage) --- */
 .hero {
-    background-color: #2d3748; /* Dark Slate background */
+    background-color: #004d40; /* Deep Teal background */
     color: #ffffff;
     text-align: center;
     padding: 100px 20px;
@@ -101,14 +101,13 @@ nav ul li a.button:hover {
 .hero h2 {
     font-size: 1.5em;
     font-weight: 400;
-    color: #a0aec0; /* Lighter grey for subtitle */
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
     margin-top: 10px;
 }
 
 .hero p {
     max-width: 600px;
     margin: 30px auto;
-    color: #e2e8f0;
 }
 
 /* Main Call-to-Action Button */
@@ -116,19 +115,19 @@ nav ul li a.button:hover {
     display: inline-block;
     padding: 14px 28px;
     margin: 10px;
-    background-color: #e53e3e; /* Crimson button */
-    color: #ffffff;
+    background-color: #ffc107; /* Gold button */
+    color: #212121; /* Dark text on gold button */
     text-decoration: none;
     border-radius: 6px;
-    font-weight: 700;
-    border: 2px solid #e53e3e;
+    font-weight: 700; /* Bolder text on button */
+    border: 2px solid #ffc107;
     transition: all 0.3s ease;
 }
 
 .button:hover {
-    background-color: #c53030; /* Darker crimson on hover */
-    border-color: #c53030;
-    transform: translateY(-2px);
+    background-color: #ffca28;
+    border-color: #ffca28;
+    transform: translateY(-2px); /* Slight lift on hover */
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
@@ -136,7 +135,7 @@ nav ul li a.button:hover {
 .card {
     background-color: #ffffff;
     border-radius: 8px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #e0e0e0;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     margin-bottom: 25px;
     padding: 30px;
@@ -144,13 +143,13 @@ nav ul li a.button:hover {
 }
 
 .card:hover {
-    border-color: #e53e3e; /* Crimson border on hover */
+    border-color: #ffc107; /* Gold border on hover */
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
 .card h3 {
     margin-top: 0;
-    color: #2d3748; /* Dark Slate for card titles */
+    color: #004d40; /* Deep Teal for card titles */
     font-weight: 700;
 }
 
@@ -166,11 +165,11 @@ nav ul li a.button:hover {
 }
 
 .card li::before {
-    content: '»';
+    content: '▪';
     position: absolute;
     left: 0;
     font-weight: 700;
-    color: #e53e3e; /* Crimson bullet */
+    color: #ffc107; /* Gold bullet */
 }
 
 /* --- Mobile Styles --- */
