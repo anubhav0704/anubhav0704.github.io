@@ -1,17 +1,17 @@
-/* --- New Color Palette --- */
-/* Primary Dark: #2d3748 */
-/* Accent:       #667eea */
-/* Accent Hover: #5a67d8 */
-/* Background:   #f7fafc */
-/* Text:         #4a5568 */
-/* --- --- --- --- --- --- */
+/* --- New Color Palette: Simple & Attractive --- */
+/* Background:   #ffffff (White) */
+/* Text/Headings:#333333 (Charcoal) */
+/* Accent:       #20c997 (Mint Green) */
+/* Accent Hover: #1baa80 (Darker Mint) */
+/* Subtle BG:    #f8f9fa (Very Light Grey) */
+/* --- --- --- --- --- --- --- --- --- --- --- */
 
 /* --- General Styles --- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f7fafc; /* Lighter background */
-    color: #4a5568; /* Softer text color */
+    background-color: #ffffff; /* Clean white background */
+    color: #333333; /* High-contrast charcoal text */
 }
 
 .container {
@@ -21,19 +21,21 @@ body {
 }
 
 h2 {
-    color: #2d3748; /* Dark blue heading */
-    border-bottom: 2px solid #667eea; /* Indigo accent border */
+    color: #333333; /* Standard heading color */
+    border-bottom: 2px solid #20c997; /* Mint green accent border */
     padding-bottom: 10px;
 }
 
 /* --- Navigation Bar --- */
 nav {
-    background-color: #2d3748; /* Dark blue background */
+    background-color: #ffffff; /* White navigation bar */
     padding: 10px 0;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 100;
+    border-bottom: 1px solid #eeeeee; /* Subtle separator */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Soft shadow for depth */
 }
 
 nav ul {
@@ -48,21 +50,28 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #333333; /* Dark text for readability */
     text-decoration: none;
     padding: 15px 20px;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
+    border-radius: 5px;
 }
 
-nav ul li a:hover, .active {
-    background-color: #667eea; /* Indigo accent for active/hover */
+nav ul li a:hover {
+    background-color: #20c997; /* Mint green highlight on hover */
+    color: #ffffff; /* White text on highlight */
+}
+
+nav ul li a.active {
+    background-color: #20c997;
+    color: #ffffff;
 }
 
 /* --- Hero Section (Homepage) --- */
 .hero {
-    background-color: #2d3748; /* Consistent dark blue background */
-    color: white;
+    background-color: #f8f9fa; /* Very light grey to separate from body */
+    color: #333333; /* Dark text */
     text-align: center;
     padding: 80px 20px;
 }
@@ -87,7 +96,7 @@ nav ul li a:hover, .active {
     display: inline-block;
     padding: 12px 25px;
     margin: 10px;
-    background-color: #667eea; /* Indigo accent button */
+    background-color: #20c997; /* Mint green button */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -96,21 +105,22 @@ nav ul li a:hover, .active {
 }
 
 .button:hover {
-    background-color: #5a67d8; /* Darker indigo on hover */
+    background-color: #1baa80; /* Darker mint on hover */
 }
 
 /* --- Project and Info Cards --- */
 .card {
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Softer shadow */
+    border: 1px solid #e9ecef; /* Subtle border */
+    box-shadow: none; /* Removed shadow for a flatter, simpler look */
     margin-bottom: 25px;
     padding: 25px;
 }
 
 .card h3 {
     margin-top: 0;
-    color: #667eea; /* Indigo accent for card titles */
+    color: #20c997; /* Mint green accent for card titles */
 }
 
 .card ul {
