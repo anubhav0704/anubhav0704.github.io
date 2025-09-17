@@ -2,8 +2,7 @@
 /* Background:   #ffffff (White) */
 /* Text/Headings:#333333 (Charcoal) */
 /* Accent:       #20c997 (Mint Green) */
-/* Accent Hover: #1baa80 (Darker Mint) */
-/* Subtle BG:    #f8f9fa (Very Light Grey) */
+/* Dark Hero BG: Dark Gradient */
 /* --- --- --- --- --- --- --- --- --- --- --- */
 
 /* --- General Styles --- */
@@ -70,8 +69,9 @@ nav ul li a.active {
 
 /* --- Hero Section (Homepage) --- */
 .hero {
-    background-color: #f8f9fa; /* Very light grey to separate from body */
-    color: #333333; /* Dark text */
+    /* UPDATED: Dark gradient background */
+    background: linear-gradient(135deg, #2d3436 0%, #000000 100%);
+    color: #ffffff; /* UPDATED: White text for contrast */
     text-align: center;
     padding: 80px 20px;
 }
